@@ -68,7 +68,58 @@ Now, take a look at the below figure for a better understanding of critical valu
 ### Steps of Hypothesis testing
 For a given business problem,
 
-Start with specifying Null and Alternative Hypotheses about a population parameter
-Set the level of significance (α)
-Collect Sample data and calculate the Test Statistic and P-value by running a Hypothesis test that well suits our data
-Make Conclusion: Reject or Fail to Reject Null Hypothesis
+
+-Start with specifying Null and Alternative Hypotheses about a population parameter
+
+-Set the level of significance (α)
+
+-Collect Sample data and calculate the Test Statistic and P-value by running a Hypothesis test that well suits our data
+
+-Make Conclusion: Reject or Fail to Reject Null Hypothesis
+
+### Decision Rules
+The two methods of concluding the Hypothesis test are using the Test-statistic value, p-value.
+
+In both methods, we start assuming the Null Hypothesis to be true, and then we reject the Null hypothesis if we find enough evidence.
+
+The decision rule for the Test-statistic method:
+
+if test-statistic (t) > critical Value (C), we reject Null Hypothesis.
+
+If test-statistic (t) ≤ critical value (C), we fail to reject Null Hypothesis.
+
+The decision rule for the p-value method:
+
+if p-value (p) > level of significance (α), we fail to reject Null Hypothesis
+
+if p-value (p) ≤ level of significance (α), we reject Null Hypothesis
+
+In easy terms, we say P High, Null Fly and P low, Null go.
+
+### Confusion Matrix in Hypothesis testing
+To plot a confusion matrix, we can take actual values in columns and predicted values in rows or vice versa.
+![image](https://user-images.githubusercontent.com/109084435/191788175-e9005fa7-2969-4c81-a9f2-f4318bef6a9c.png)
+
+#### Confidence: 
+The probability of accepting a True Null Hypothesis. It is denoted as (1-α)
+
+#### Power of test: 
+The probability of rejecting a False Null Hypothesis i.e., the ability of the test to detect a difference. It is denoted as (1-β) and its value lies between 0 and 1.
+
+#### Type I error: 
+Occurs when we reject a True Null Hypothesis and is denoted as α.
+
+#### Type II error:
+Occurs when we accept a False Null Hypothesis and is denoted as β.
+
+#### Accuracy:  
+Number of correct predictions / Total number of cases
+
+The factors that affect the power of the test are sample size, population variability, and the confidence (α).
+Confidence and power of test are directly proportional. Increasing the confidence increases the power of the test.
+
+### Types of Hypothesis Tests
+Hypothesis tests when the data is Continuous.
+
+IMAGE-Hypothesis tests for continuous data
+Hypothesis tests when the data is Discrete.
